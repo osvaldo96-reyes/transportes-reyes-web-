@@ -1,0 +1,6 @@
+{
+  "name": "Transportes Reyes - Pipas de Agua",
+  "description": "Servicio de pipas de agua potable y tratada de 10,000, 20,000 y 45,000 L en CDMX y Estado de México. 10 años de experiencia, servicio 24 hrs de lunes a viernes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
