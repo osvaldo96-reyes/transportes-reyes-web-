@@ -153,7 +153,7 @@ export const CAPACITIES: CapacityItem[] = [
     vehicleType: 'Camión Cisterna Mediano (Tándem 3 ejes)',
     hoseReach: 'Hasta 80 - 100 metros de manguera',
     popular: true,
-    imageUrl: '/src/assets/images/hero_pipa_agua_1789312454598.jpg',
+    imageUrl: '/src/assets/images/pipa_de_agua_45litros_Transportes_reyes.jpg',
     recommendedFor: [
       'Condominios y unidades habitacionales',
       'Hoteles, plazas y centros comerciales',
