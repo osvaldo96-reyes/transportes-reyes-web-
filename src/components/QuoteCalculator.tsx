@@ -29,13 +29,15 @@ export const QuoteCalculator: React.FC = () => {
   ];
 
   const zonesList = [
-    'Venustiano Carranza (CDMX)',
-    'Cuauhtémoc (CDMX)',
-    'Parte Álvaro Obregón (CDMX)',
+    'Benito Juárez (CDMX)',
+    'Miguel Hidalgo (CDMX)',
+    'Coyoacán (CDMX)',
     'Iztapalapa (CDMX)',
-    'Los Reyes (La Paz / Edomex)',
-    'Estado de México (Zona Oriente)',
+    'Xochimilco (CDMX)',
+    'Division del Norte (Corredor Vial)',
+    'Estado de México',
     'Otra Alcaldía o Municipio',
+    
   ];
 
   const whatsappUrl = generateWhatsAppUrl({
@@ -341,7 +343,7 @@ Urgencia: ${urgency}`;
 
             {/* Note */}
             <p className="text-center text-xs text-slate-500 px-4">
-              Horario de despacho 24 horas de Lunes a Viernes. Unidades equipadas con manguera de alta resistencia y motobomba de descarga acelerada.
+              Horario de despacho 24 horas de Lunes a Sábado. Unidades equipadas con manguera de alta resistencia y motobomba de descarga acelerada.
             </p>
           </div>
         </div>

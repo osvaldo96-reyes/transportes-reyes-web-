@@ -162,7 +162,7 @@ export const CoverageZones: React.FC = () => {
                 <div className="bg-white/5 p-3.5 rounded-xl border border-white/10">
                   <span className="text-[11px] text-slate-400 block">Disponibilidad:</span>
                   <span className="text-base font-black text-emerald-400">
-                    24 hrs L-V
+                    24 hrs L-S
                   </span>
                 </div>
               </div>

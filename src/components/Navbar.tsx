@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-4 text-slate-200">
             <span className="flex items-center gap-1.5 font-medium">
               <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
-              <strong className="text-white">Servicio 24 hrs</strong> de Lunes a Viernes
+              <strong className="text-white">Servicio 24 hrs</strong> de Lunes a Sábado
             </span>
             <span className="hidden sm:inline-flex items-center gap-1.5 text-slate-300">
               <MapPin className="w-3.5 h-3.5 text-[#4CAF50]" />
