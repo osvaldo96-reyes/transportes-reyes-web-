@@ -8,9 +8,9 @@ export const COMPANY_INFO = {
   schedule: 'Servicio 24 hrs de Lunes a Viernes',
   emergencySchedule: 'Atención de emergencias 24 horas',
   city: 'Estado de México y Ciudad de México',
-  phone: '56 1357 0796',
-  phoneFormatted: '+52 56 1357 0796',
-  whatsappNumber: '525613570796',
+  phone: '5561351821',
+  phoneFormatted: '5561351821',
+  whatsappNumber: '5561351821',
   email: 'contacto@transportesreyes.com',
   quoteDefaultMessage: '¡Hola! Me comunico desde la página web de Transportes Reyes. Requiero cotización para una pipa de agua.',
 };
@@ -63,7 +63,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Constructoras y Obra Civil',
     description: 'Acarreo de agua tratada y potable para terracerías, compactación de suelos, preparación de concretos, curado y control de polvo.',
     badge: 'Industrial',
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://www.pipaxa.com/wp-content/uploads/2026/01/Pipa-de-agua-para-obras-fabricas-y-comercios-imagen-0.jpg',
     waterType: 'tratada',
     features: [
       'Pipas de gran volumen (45,000 Litros)',
@@ -137,7 +137,7 @@ export const CAPACITIES: CapacityItem[] = [
     subtitle: 'La pipa más ágil y versátil',
     vehicleType: 'Camión Cisterna Compacto (Chasis 2 ejes)',
     hoseReach: 'Hasta 60 - 80 metros de manguera',
-    imageUrl: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/src/assets/images/pipa_de_agua_10LT_Transportes_reyes.jpeg',
     recommendedFor: [
       'Casas particulares y residencias',
       'Cisternas estándar (5,000 L a 10,000 L)',
@@ -153,7 +153,7 @@ export const CAPACITIES: CapacityItem[] = [
     vehicleType: 'Camión Cisterna Mediano (Tándem 3 ejes)',
     hoseReach: 'Hasta 80 - 100 metros de manguera',
     popular: true,
-    imageUrl: '/src/assets/images/hero_pipa_agua_1789312454598.jpg',
+    imageUrl: '/src/assets/images/pipa_de_agua_20Lts_Transportes_reyes.jpeg',
     recommendedFor: [
       'Condominios y unidades habitacionales',
       'Hoteles, plazas y centros comerciales',
@@ -168,7 +168,7 @@ export const CAPACITIES: CapacityItem[] = [
     subtitle: 'Alto volumen para industrias y grandes obras',
     vehicleType: 'Tractocamión Cisterna (Semirremolque de alto flujo)',
     hoseReach: 'Conexión de alto flujo o descarga por gravedad',
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/src/assets/images/pipa_de_agua_45litros_Transportes_reyes.jpg',
     recommendedFor: [
       'Constructoras y autopistas',
       'Terracerías y compactación de suelo',
