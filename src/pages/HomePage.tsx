@@ -45,7 +45,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div>
                 <span className="block text-xs text-sky-200 uppercase tracking-wider font-bold">Experiencia</span>
-                <span className="text-sm font-black text-white">10 Años en el Mercado</span>
+                <span className="text-sm font-black text-white">15 Años en el Mercado</span>
               </div>
             </div>
 
@@ -306,7 +306,7 @@ export const HomePage: React.FC = () => {
                 &ldquo;{COMPANY_INFO.slogan}&rdquo;
               </blockquote>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Con más de 10 años de experiencia comprobada en el transporte de agua potable y tratada, nos hemos consolidado como el servicio de pipas más confiable del oriente de la zona metropolitana.
+                Con más de 15 años de experiencia comprobada en el transporte de agua potable y tratada, nos hemos consolidado como el servicio de pipas más confiable del oriente de la zona metropolitana.
               </p>
               <div className="pt-2">
                 <button
