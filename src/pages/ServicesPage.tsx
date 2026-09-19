@@ -123,7 +123,7 @@ export const ServicesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-2xl font-black mb-1">¿Necesitas una pipa en este momento?</h3>
-            <p className="text-slate-300 text-sm">Nuestras unidades están en ruta con servicio 24 horas de lunes a viernes.</p>
+            <p className="text-slate-300 text-sm">Nuestras unidades están en ruta con servicio 24 horas de lunes a sábado.</p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <button
