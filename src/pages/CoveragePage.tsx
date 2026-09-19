@@ -14,7 +14,7 @@ export const CoveragePage: React.FC = () => {
         currentLabel="Zonas de Cobertura"
         badge="Rutas en CDMX y Estado de México"
         title="Zonas de Cobertura y Tiempos de Llegada"
-        subtitle="Unidades ubicadas estratégicamente para llegar a tu colonia o municipio en el menor tiempo posible, con servicio 24 horas de lunes a viernes."
+        subtitle="Unidades ubicadas estratégicamente para llegar a tu colonia o municipio en el menor tiempo posible, con servicio 24 horas de lunes a sábado."
         badgeIcon={<MapPin className="w-3.5 h-3.5 text-[#00AEEF]" />}
       />
 

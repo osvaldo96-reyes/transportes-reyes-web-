@@ -12,7 +12,7 @@ export const AboutPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50">
       <PageHeader
         currentLabel="Nosotros"
-        badge="10 Años de Trayectoria y Confianza"
+        badge="15 Años de Trayectoria y Confianza"
         title="Esencia y Compromiso de Transportes Reyes"
         subtitle="“En Transportes Reyes creemos en el poder del agua para generar bienestar, impulsar comunidades y construir un futuro más saludable”"
         badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#00AEEF]" />}
@@ -29,7 +29,7 @@ export const AboutPage: React.FC = () => {
               Nuestra Filosofía de Servicio
             </span>
             <h2 className="text-3xl font-black text-[#0B3D91]">
-              10 Años Siendo el Aliado Confiable de CDMX y EdoMex
+              15 Años Siendo el Aliado Confiable de CDMX y EdoMex
             </h2>
             <p className="text-slate-600 mt-2 text-sm sm:text-base">
               Nos distinguimos por la calidad humana de nuestros operadores, la puntualidad en cada entrega y la pureza certificada de nuestra agua.
@@ -41,7 +41,7 @@ export const AboutPage: React.FC = () => {
               <div className="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-[#0B3D91] mb-6">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-2">10 Años de Experiencia</h3>
+              <h3 className="text-xl font-black text-slate-900 mb-2">15 Años de Experiencia</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Una década transportando millones de litros de agua potable y tratada para miles de hogares, residenciales, comercios y desarrollos de construcción.
               </p>

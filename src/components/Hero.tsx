@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-[#4CAF50] animate-pulse"></span>
               <span className="text-white font-bold">{COMPANY_INFO.yearsExperience} Años de Experiencia</span>
               <span className="text-sky-300">•</span>
-              <span>Servicio 24 hrs de Lunes a Viernes</span>
+              <span>Servicio 24 hrs de Lunes a Sábado</span>
             </div>
 
             {/* H1 Primary Heading */}
@@ -135,7 +135,7 @@ export const Hero: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 border border-slate-200">
                   <span className="text-xs font-semibold text-slate-700">Horario:</span>
-                  <span className="text-xs font-bold text-emerald-700">24 hrs Lunes a Viernes</span>
+                  <span className="text-xs font-bold text-emerald-700">24 hrs Lunes a Sábado</span>
                 </div>
               </div>
 
