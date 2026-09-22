@@ -35,7 +35,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Llenado de Cisternas y Tinacos',
     description: 'Servicio especializado para rellenar cisternas subterráneas, tanques elevados y depósitos de almacenamiento domésticos o comunitarios.',
     badge: 'Más Solicitado',
-    imageUrl: '/src/assets/images/llenado_cisterna_1789312468602.jpg',
+    imageUrl: '/images/llenado_cisterna_1789312468602.jpg',
     waterType: 'potable',
     features: [
       'Bomba de alta presión para descarga rápida',
@@ -137,7 +137,7 @@ export const CAPACITIES: CapacityItem[] = [
     subtitle: 'La pipa más ágil y versátil',
     vehicleType: 'Camión Cisterna Compacto (Chasis 2 ejes)',
     hoseReach: 'Hasta 60 - 80 metros de manguera',
-    imageUrl: '/src/assets/images/pipa_de_agua_10LT_Transportes_reyes.jpeg',
+    imageUrl: '/images/pipa_de_agua_10LT_Transportes_reyes.jpeg',
     recommendedFor: [
       'Casas particulares y residencias',
       'Cisternas estándar (5,000 L a 10,000 L)',
@@ -153,7 +153,7 @@ export const CAPACITIES: CapacityItem[] = [
     vehicleType: 'Camión Cisterna Mediano (Tándem 3 ejes)',
     hoseReach: 'Hasta 80 - 100 metros de manguera',
     popular: true,
-    imageUrl: '/src/assets/images/pipa_de_agua_20Lts_Transportes_reyes.jpeg',
+    imageUrl: '/images/pipa_de_agua_20Lts_Transportes_reyes.jpeg',
     recommendedFor: [
       'Condominios y unidades habitacionales',
       'Hoteles, plazas y centros comerciales',
@@ -168,7 +168,7 @@ export const CAPACITIES: CapacityItem[] = [
     subtitle: 'Alto volumen para industrias y grandes obras',
     vehicleType: 'Tractocamión Cisterna (Semirremolque de alto flujo)',
     hoseReach: 'Conexión de alto flujo o descarga por gravedad',
-    imageUrl: '/src/assets/images/pipa_de_agua_45litros_Transportes_reyes.jpg',
+    imageUrl: '/images/pipa_de_agua_45litros_Transportes_reyes.jpg',
     recommendedFor: [
       'Constructoras y autopistas',
       'Terracerías y compactación de suelo',
