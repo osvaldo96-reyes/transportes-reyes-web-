@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Transportes Reyes — Sitio Web
 
-# Run and deploy your AI Studio app
+## Correr en local
 
-This contains everything you need to run your app locally.
+1. Instalar dependencias:
+   ```
+   npm install
+   ```
+2. Ver el sitio:
+   ```
+   npm run dev
+   ```
+   Abre: http://localhost:3001
 
-View your app in AI Studio: https://ai.studio/apps/74c914bc-5287-451e-b614-0c8d9c0d1184
+---
 
-## Run Locally
+## Flujo de trabajo
 
-**Prerequisites:**  Node.js
+1. Partir siempre de `dev` actualizado:
+   ```
+   git checkout dev
+   git pull
+   ```
+2. Crear rama con nombre descriptivo:
+   ```
+   git checkout -b fix/nombre-del-cambio
+   ```
+3. Hacer el cambio y verificar en local con `npm run dev`
+4. Subir la rama:
+   ```
+   git add .
+   git commit -m "describe el cambio"
+   git push origin fix/nombre-del-cambio
+   ```
+5. En GitHub → crear Pull Request hacia `dev`
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Imágenes — IMPORTANTE
+
+Todas las imágenes nuevas deben colocarse en la carpeta:
+
+```
+public/images/
+```
+
+Y referenciarse en el código así:
+
+```js
+imageUrl: '/images/nombre-de-imagen.jpg'
+```
+
+**No usar rutas como `/src/assets/images/...`** — esas rutas no funcionan en producción.
+
+---
+
+## Subir a producción
+
+1. Compilar:
+   ```
+   npm run build
+   ```
+2. Abrir FileZilla y conectar:
+   - Servidor: `svgt446.serverneubox.com.mx`
+   - Puerto: `21`
+3. Subir todo el contenido de `dist/` a `public_html/` en el servidor
