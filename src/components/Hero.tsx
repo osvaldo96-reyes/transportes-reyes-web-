@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
       {/* Big Hero Background Image with High Quality & Tint Overlays */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/pipa_de_agua_45litros_Transportes_reyes.jpg"
+          src="/src/assets/images/Portada_Transportes_reyes.jpeg"
           alt="Camión pipa de agua de Transportes Reyes en servicio"
           className="w-full h-full object-cover object-center scale-105 transform animate-fade-in"
           fetchPriority="high"
