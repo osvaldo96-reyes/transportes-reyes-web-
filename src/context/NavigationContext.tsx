@@ -21,7 +21,7 @@ const validPages: PageId[] = [
 const pageTitles: Record<PageId, string> = {
   inicio: 'Transportes Reyes | Pipas de Agua Potable y Tratada 24 hrs',
   servicios: 'Servicios de Pipas de Agua | Transportes Reyes',
-  capacidades: 'Capacidades de Pipas (10k, 20k, 45k L) | Transportes Reyes',
+  capacidades: 'Capacidades de Pipas (10mil LT, 20mil LT, 45mil LT) | Transportes Reyes',
   cotizador: 'Cotizador de Pipas de Agua en Línea | Transportes Reyes',
   cobertura: 'Zonas de Cobertura CDMX y EdoMex | Transportes Reyes',
   nosotros: 'Nosotros y Calidad del Agua | Transportes Reyes',

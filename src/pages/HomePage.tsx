@@ -55,7 +55,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div>
                 <span className="block text-xs text-sky-200 uppercase tracking-wider font-bold">Flota</span>
-                <span className="text-sm font-black text-white">10k, 20k y 45k Litros</span>
+                <span className="text-sm font-black text-white">10mil LT, 20mil LT y 45mil LT</span>
               </div>
             </div>
 
@@ -219,7 +219,7 @@ export const HomePage: React.FC = () => {
                 Calcula tu Presupuesto al Momento
               </h2>
               <p className="text-sky-100 text-sm sm:text-base leading-relaxed">
-                Selecciona litros (10k, 20k o 45k), tipo de agua y tu colonia en CDMX o Edomex para generar tu orden directa a WhatsApp con operador disponible.
+                Selecciona litros (10mil LT, 20mil LT o 45mil LT), tipo de agua y tu colonia en CDMX o Edomex para generar tu orden directa a WhatsApp con operador disponible.
               </p>
             </div>
 

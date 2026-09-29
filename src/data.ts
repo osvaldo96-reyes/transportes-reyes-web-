@@ -187,7 +187,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Servicio para departamentos, condominios, restaurantes, cafeterías, hoteles, oficinas y clínicas..',
     coloniasPrincipales: ['Del valle', 'Narvarte', 'Napoles',  'Portales', 'Mixcoac', 'Alamos'],
-    estimatedArrival: '50 - 75 min',
+    
   },
   {
     id: 'Miguel-Hidalgo',
@@ -196,7 +196,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Servicio para condominios, hoteles, restaurantes, empresas y residencias.',
     coloniasPrincipales: ['Polanco', 'Anzures', 'Escandon', 'Tacuba', 'Lomas de Chapultepec', 'San Miguel Chapultepec'],
-    estimatedArrival: '60 - 85 min',
+    
   },
   {
     id: 'Coyoacan',
@@ -205,7 +205,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Servicio para departamentos, condominios, restaurantes, cafeterías, hoteles, oficinas y clínicas..',
     coloniasPrincipales: ['Coyoacán', 'Pedregal de Santo Domingo', 'Roma Norte', 'Roma Sur', 'Ajusco', 'Santa Ursula Coapa', 'Jardines del Pedregal'],
-    estimatedArrival: '50 - 75 min',
+    
   },
 
   {
@@ -215,7 +215,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Respuesta ante el desabasto frecuente en colonias residenciales, unidades y pequeños comercios.',
     coloniasPrincipales: ['San Lorenzo Tezonco', 'Ermita Zaragoza', 'Santa Martha Acatitla', 'Lomas Estrella', 'Constitución de 1917', 'Vicente Guerrero'],
-    estimatedArrival: '30 - 45 min',
+   
   },
   {
     id: 'Xochimilco',
@@ -224,7 +224,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Hogares, restaurantes, viveros, salones de eventos y comercios en zonas autorizadas..',
     coloniasPrincipales: ['Xochimilco Centro', 'Una parte de Xochimilco solamente'],
-    estimatedArrival: '50 - 90 min',
+    
   },
   {
     id: 'Division del Norte',
@@ -233,7 +233,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Departamentos, restaurantes, cafeterías, oficinas, consultorios y comercios cercanos al corredor.',
     coloniasPrincipales: ['Narvarte poniente', 'Del Valle', 'Santa Cruz Atoyac', 'Xotepingo', 'Campestre Churubusco'],
-    estimatedArrival: '50 - 75 min',
+    
   },
  {
     id: 'Acoxpa',
@@ -242,7 +242,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Casas, condominios, plazas comerciales, restaurantes, escuelas, oficinas y negocios.',
     coloniasPrincipales: ['Villa Coapa', 'Ex Hacienda Coapa', 'Rinconada Coapa', 'Vergel Coapa', 'Prado Coapa'],
-    estimatedArrival: '60 - 85 min',
+   
   },
   {
     id: 'Tláhuac',
@@ -251,7 +251,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Hogares, cisternas, unidades habitacionales, escuelas, comercios y pequeños negocios.',
     coloniasPrincipales: ['San pedro Tlahuac', 'Santiago Zapotitlan', 'San Francisco Tlatelolco', 'Santa Catarina',],
-    estimatedArrival: '45 - 65 min',
+    
   },
    {
     id: 'Azcapotzalco',
@@ -260,8 +260,9 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Hogares, unidades habitacionales, bodegas, fábricas, talleres y parques industriales.',
     coloniasPrincipales: ['Claveria', 'Nueva Santa Maria', 'El Rosario', 'Industrial Vallejo', 'Santa Barbara','Centro de Azcapotzalco'],
-    estimatedArrival: '50 - 90 min',
+    
   },
+
  {
     id: 'Edomex',
     name: 'Estado de México',
@@ -269,7 +270,7 @@ export const COVERAGE_ZONES: CoverageZone[] = [
     status: 'Cobertura Inmediata',
     description: 'Rutas activas en Nezahualcóyotl, Texcoco.',
     coloniasPrincipales: ['Cd. Nezahualcóyotl', 'Texcoco'],
-    estimatedArrival: '30 - 50 min',
+    
   },
 ];
 
