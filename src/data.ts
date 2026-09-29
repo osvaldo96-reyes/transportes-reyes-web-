@@ -21,7 +21,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Pipas de Agua a Domicilio y Casas',
     description: 'Abastecimiento directo y confiable para residencias particulares, privadas y condominios con tuberías y mangueras sanitarias de largo alcance.',
     badge: 'Residencial',
-    imageUrl: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80',
+    imageUrl: '/src/assets/images/imagenes_pipas/Pipas_de_Agua_a_Domicilio_y_Casas_Transportes_reyes.jpeg',
     waterType: 'potable',
     features: [
       'Agua potable 100% limpia y cristalina',
@@ -35,7 +35,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Llenado de Cisternas y Tinacos',
     description: 'Servicio especializado para rellenar cisternas subterráneas, tanques elevados y depósitos de almacenamiento domésticos o comunitarios.',
     badge: 'Más Solicitado',
-    imageUrl: '/src/assets/images/llenado_cisterna_1789312468602.jpg',
+    imageUrl: '/src/assets/images/imagenes_pipas/Tinacos_Transpportes_Reyes.jpg',
     waterType: 'potable',
     features: [
       'Bomba de alta presión para descarga rápida',
@@ -49,7 +49,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Servicio para Empresas y Comercios',
     description: 'Suministro continuo y programado para restaurantes, hoteles, centros comerciales, oficinas, naves industriales y plantas procesadoras.',
     badge: 'Comercial',
-    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80',
+    imageUrl: '/src/assets/images/imagenes_pipas/Servicio_para_Empresas_y_comercios_Tansportes_reyes.jpg',
     waterType: 'ambas',
     features: [
       'Facturación electrónica inmediata (CFDI)',
@@ -63,7 +63,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Constructoras y Obra Civil',
     description: 'Acarreo de agua tratada y potable para terracerías, compactación de suelos, preparación de concretos, curado y control de polvo.',
     badge: 'Industrial',
-    imageUrl: 'https://www.pipaxa.com/wp-content/uploads/2026/01/Pipa-de-agua-para-obras-fabricas-y-comercios-imagen-0.jpg',
+    imageUrl: '/src/assets/images/imagenes_pipas/Constructoras_y_Obra Civil_Transportes_reyes.jpg',
     waterType: 'tratada',
     features: [
       'Pipas de gran volumen (45,000 Litros)',
@@ -91,7 +91,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Eventos Masivos y Producciones',
     description: 'Abastecimiento temporal para festivales, conciertos, eventos deportivos, sanitarios móviles, filmaciones y sets de producción.',
     badge: 'Eventos',
-    imageUrl: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80',
+    imageUrl: '/src/assets/images/imagenes_pipas/Eventos_Masivos_y_Producciones_Transportes_reyes.jpg',
     waterType: 'ambas',
     features: [
       'Logística en sitio con personal capacitado',
@@ -119,7 +119,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Agua Tratada Certificada',
     description: 'Soluciones sustentables y económicas para procesos de enfriamiento, riego de áreas verdes comunitarias y pruebas hidrostáticas.',
     badge: 'Ecológico',
-    imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80',
+    imageUrl: '/src/assets/images/imagenes_pipas/Agua_Tratada_Certificada_Transportes_reyes.jpg',
     waterType: 'tratada',
     features: [
       'Cumple NOM ambiental para reuso',
