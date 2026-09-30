@@ -25,7 +25,7 @@ export const SERVICES: ServiceItem[] = [
     waterType: 'potable',
     features: [
       'Agua potable 100% limpia y cristalina',
-      'Mangueras de hasta 80-100 metros',
+      'Mangueras de mas de 30 metros (Mas de 30 metros cargo extra)',
       'Preservación de la presión en tinacos',
       'Atención rápida y puntual',
     ],
@@ -136,7 +136,7 @@ export const CAPACITIES: CapacityItem[] = [
     liters: 10000,
     subtitle: 'La pipa más ágil y versátil',
     vehicleType: 'Camión Cisterna Compacto (Chasis 2 ejes)',
-    hoseReach: 'Hasta 60 - 80 metros de manguera',
+    hoseReach: '30 metros de manguera (Mas de 30 metros cargo extra)',
     imageUrl: '/src/assets/images/pipa_de_agua_10LT_Transportes_reyes.jpeg',
     recommendedFor: [
       'Casas particulares y residencias',
@@ -151,7 +151,7 @@ export const CAPACITIES: CapacityItem[] = [
     liters: 20000,
     subtitle: 'Capacidad intermedia ideal para edificios',
     vehicleType: 'Camión Cisterna Mediano (Tándem 3 ejes)',
-    hoseReach: 'Hasta 80 - 100 metros de manguera',
+    hoseReach: '30 metros de manguera (Mas de 30 metros cargo extra)',
     popular: true,
     imageUrl: '/src/assets/images/pipa_de_agua_20Lts_Transportes_reyes.jpeg',
     recommendedFor: [
@@ -320,7 +320,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: '¿Cuántos metros de manguera tienen disponibles?',
-    answer: 'Nuestras unidades están equipadas con 60 hasta 100 metros de manguera flexible y de alta resistencia. Al momento de solicitar tu cotización por WhatsApp, indícanos si tu cisterna o tinaco se encuentra al fondo o en un nivel elevado para llevar el equipo de bombeo adecuado.',
+    answer: 'Nuestras unidades están equipadas con 30 hasta 100 metros de manguera flexible y de alta resistencia (Mas de 30 metros cargo extra). Al momento de solicitar tu cotización por WhatsApp, indícanos si tu cisterna o tinaco se encuentra al fondo o en un nivel elevado para llevar el equipo de bombeo adecuado.',
     category: 'logistica',
   },
   {
