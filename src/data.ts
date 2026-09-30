@@ -3,7 +3,7 @@ import { ServiceItem, CapacityItem, CoverageZone, FaqItem } from './types';
 export const COMPANY_INFO = {
   name: 'Transportes Reyes',
   tagline: 'Más que transporte, agua para la vida',
-  slogan: 'En Transportes Reyes creemos en el poder del agua para generar bienestar, impulsar comunidades y construir un futuro más saludable.',
+  slogan: 'En Transportes Reyes no trabajamos con anticipos. Pago contra entrega, tu seguridad primero.',
   yearsExperience: 15,
   schedule: 'Servicio 24 hrs de Lunes a Sábado',
   emergencySchedule: 'Atención de emergencias 24 horas',

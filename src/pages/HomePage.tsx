@@ -72,8 +72,95 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. Featured Services Section */}
-      <section className="py-16 bg-white">
+{/* 3. Fleet Capacities Teaser */}
+<section className="py-16 bg-gradient-to-b from-sky-50/50 to-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center max-w-3xl mx-auto mb-12">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-[#0B3D91] text-xs font-black uppercase tracking-wider mb-2">
+        <Truck className="w-3.5 h-3.5 text-[#00AEEF]" />
+        Capacidades Disponibles
+      </div>
+      <h2 className="text-3xl sm:text-4xl font-black text-[#0B3D91] tracking-tight">
+        Flota Adaptada a tus Necesidades
+      </h2>
+      <p className="text-slate-600 mt-2 text-sm sm:text-base">
+        Disponemos de tres tamaños de cisterna para adaptarnos al volumen requerido y a las condiciones viales de acceso.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {CAPACITIES.map((cap) => (
+        <div
+          key={cap.capacity}
+          className={`bg-white rounded-3xl border transition-all duration-300 flex flex-col relative ${
+            cap.popular
+              ? 'border-[#00AEEF] shadow-xl ring-2 ring-[#00AEEF]/20'
+              : 'border-slate-200 shadow-md hover:shadow-lg'
+          }`}
+        >
+          {cap.popular && (
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 px-4 py-1 rounded-full bg-[#00AEEF] text-white text-[11px] font-black uppercase tracking-wider shadow-sm whitespace-nowrap">
+             ★ Opción Más Solicitada ★
+            </span>
+          )}
+
+          {/* Foto con litraje encima */}
+          <div className="relative h-48 rounded-t-3xl overflow-hidden">
+            <img
+              src={cap.imageUrl}
+              alt={`Pipa de ${cap.capacity}`}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            <span className="absolute bottom-3 left-5 text-3xl font-black text-white drop-shadow">
+              {cap.capacity}
+            </span>
+          </div>
+
+          <div className="p-8 pt-6 flex flex-col justify-between flex-1">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] block mb-3">
+                {cap.subtitle}
+              </span>
+              <p className="text-xs text-slate-600 mb-6 leading-relaxed">
+                Vehículo: <strong className="text-slate-800">{cap.vehicleType}</strong>. Incluye motobomba y manguera con alcance de hasta {cap.hoseReach}.
+              </p>
+              <ul className="space-y-2 mb-6">
+                {cap.recommendedFor.map((rec, i) => (
+                  <li key={i} className="flex items-center gap-2 text-xs text-slate-700">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                    <span>{rec}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <button
+              onClick={() => navigate('capacidades')}
+              className="w-full py-3 rounded-xl bg-slate-100 hover:bg-[#0B3D91] hover:text-white text-slate-800 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-2"
+            >
+              <span>Ver Especificaciones Técnicas</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-10 text-center">
+      <button
+        onClick={() => navigate('capacidades')}
+        className="inline-flex items-center gap-2 text-sm font-black text-[#0B3D91] hover:text-[#00AEEF] transition-colors cursor-pointer"
+      >
+        <span>Explorar equipamiento y motobombas en la página de Capacidades</span>
+        <ArrowRight className="w-4 h-4" />
+      </button>
+    </div>
+  </div>
+</section>
+
+      {/* 4. Featured Services Section */}
+      <section className="py-16 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
@@ -132,79 +219,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. Fleet Capacities Teaser */}
-      <section className="py-16 bg-gradient-to-b from-sky-50/50 to-white border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-[#0B3D91] text-xs font-black uppercase tracking-wider mb-2">
-              <Truck className="w-3.5 h-3.5 text-[#00AEEF]" />
-              Capacidades Disponibles
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#0B3D91] tracking-tight">
-              Flota Adaptada a tus Necesidades
-            </h2>
-            <p className="text-slate-600 mt-2 text-sm sm:text-base">
-              Disponemos de tres tamaños de cisterna para adaptarnos al volumen requerido y a las condiciones viales de acceso.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {CAPACITIES.map((cap) => (
-              <div
-                key={cap.capacity}
-                className={`bg-white rounded-3xl p-8 border transition-all duration-300 flex flex-col justify-between relative ${
-                  cap.popular
-                    ? 'border-[#00AEEF] shadow-xl ring-2 ring-[#00AEEF]/20'
-                    : 'border-slate-200 shadow-md hover:shadow-lg'
-                }`}
-              >
-                {cap.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#00AEEF] text-white text-[11px] font-black uppercase tracking-wider shadow-sm">
-                    Más Solicitada para Casas
-                  </span>
-                )}
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] block mb-1">
-                    {cap.subtitle}
-                  </span>
-                  <div className="flex items-baseline gap-2 mb-3">
-                    <span className="text-4xl font-black text-slate-900">{cap.capacity}</span>
-                    <span className="text-xs text-slate-500 font-bold">Litros</span>
-                  </div>
-                  <p className="text-xs text-slate-600 mb-6 leading-relaxed">
-                    Vehículo: <strong className="text-slate-800">{cap.vehicleType}</strong>. Incluye motobomba y manguera con alcance de hasta {cap.hoseReach}.
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    {cap.recommendedFor.map((rec, i) => (
-                      <li key={i} className="flex items-center gap-2 text-xs text-slate-700">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
-                        <span>{rec}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <button
-                  onClick={() => navigate('capacidades')}
-                  className="w-full py-3 rounded-xl bg-slate-100 hover:bg-[#0B3D91] hover:text-white text-slate-800 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-2"
-                >
-                  <span>Ver Especificaciones Técnicas</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <button
-              onClick={() => navigate('capacidades')}
-              className="inline-flex items-center gap-2 text-sm font-black text-[#0B3D91] hover:text-[#00AEEF] transition-colors cursor-pointer"
-            >
-              <span>Explorar equipamiento y motobombas en la página de Capacidades</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-      </section>
 
       {/* 5. Online Quote Calculator Banner */}
       <section className="py-14 bg-[#072559] text-white">
