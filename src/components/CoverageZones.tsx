@@ -98,7 +98,7 @@ export const CoverageZones: React.FC = () => {
                       </p>
                     </div>
 
-                    <div className="text-right flex-shrink-0">
+  <div className="text-right flex-shrink-0">
                       <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-md border border-emerald-200">
                         <Clock className="w-3 h-3" />
                         {zone.estimatedArrival}
@@ -148,24 +148,21 @@ export const CoverageZones: React.FC = () => {
                   <span className="px-3 py-1.5 rounded-lg bg-[#00AEEF]/20 text-xs font-bold text-sky-200 border border-[#00AEEF]/30">
                     + Zonas aledañas
                   </span>
-                </div>
+               </div>
               </div>
 
-              {/* Metrics */}
-              <div className="grid grid-cols-2 gap-3 pt-2">
-                <div className="bg-white/5 p-3.5 rounded-xl border border-white/10">
-                  <span className="text-[11px] text-slate-400 block">Tiempo Estimado:</span>
-                  <span className="text-base font-black text-amber-300">
-                    {selectedZone.estimatedArrival}
-                  </span>
-                </div>
-                <div className="bg-white/5 p-3.5 rounded-xl border border-white/10">
-                  <span className="text-[11px] text-slate-400 block">Disponibilidad:</span>
-                  <span className="text-base font-black text-emerald-400">
-                    24 hrs L-S
-                  </span>
-                </div>
-              </div>
+         {/* Metrics */}
+<div className="pt-2">
+  <div className="inline-flex items-center gap-3 bg-white/5 px-4 py-2.5 rounded-xl border border-white/10">
+    <div className="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center">
+      <Clock className="w-4 h-4 text-emerald-400" />
+    </div>
+    <div className="leading-tight">
+      <span className="text-[11px] text-slate-400 block">Disponibilidad</span>
+      <span className="text-sm font-black text-emerald-400">24 hrs L-S</span>
+    </div>
+  </div>
+</div>
 
               {/* Direct WhatsApp quote for this zone */}
               <div className="pt-2">

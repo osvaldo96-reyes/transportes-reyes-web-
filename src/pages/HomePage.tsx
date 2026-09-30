@@ -258,7 +258,7 @@ export const HomePage: React.FC = () => {
                 Cobertura en CDMX y Estado de México
               </h2>
               <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
-                Nuestra base operativa distribuye pipas en Los Reyes La Paz, Neza, Iztapalapa, Cuauhtémoc, Texcoco y más.
+                Nuestra base operativa distribuye pipas en Neza, Iztapalapa, Cuauhtémoc, Texcoco y más.
               </p>
             </div>
             <button
