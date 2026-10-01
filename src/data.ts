@@ -77,7 +77,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Llenado de Albercas y Jacuzzis',
     description: 'Agua de máxima pureza, libre de sedimentos y balanceada, lista para albercas recreativas, deportivas, residenciales y hoteles.',
     badge: 'Especializado',
-    imageUrl: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=900&q=80',
+    imageUrl: '/src/assets/images/imagenes_pipas/Llenado_de_Albercas_y_Jacuzzis_Transportes_reyes.jpg',
     waterType: 'potable',
     features: [
       'Claridad cristalina sin impurezas',
@@ -105,7 +105,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Emergencias por Desabasto de Agua',
     description: 'Atención prioritaria cuando la red pública falla o te quedas sin suministro. Despacho rápido para hospitales, clínicas, asilos y hogares.',
     badge: 'Urgente',
-    imageUrl: 'https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=900&q=80',
+    imageUrl: '/src/assets/images/imagenes_pipas/Emergencias_por_Desabasto_de_Agua_Transportes_reyes.jpg',
     waterType: 'potable',
     features: [
       'Despacho ágil en minutos',
