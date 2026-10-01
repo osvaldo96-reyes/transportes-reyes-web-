@@ -33,7 +33,7 @@ export const CoveragePage: React.FC = () => {
                 Consultamos tu ubicación GPS de inmediato
               </h3>
               <p className="text-sky-100 text-sm sm:text-base leading-relaxed">
-                Nuestras pipas de 10k, 20k y 45k litros cubren rutas extendidas en todo el Valle de México y municipios conurbados del Edomex. Escríbenos con tu código postal para confirmarte tiempo de arribo.
+                Nuestras pipas de 10mil, 20mil y 45mil litros cubren rutas extendidas en todo el Valle de México y municipios conurbados del Edomex. Escríbenos con tu código postal para confirmarte tiempo de arribo.
               </p>
               <div className="pt-3 flex flex-wrap items-center gap-3">
                 <a

@@ -175,9 +175,12 @@ export const Footer: React.FC = () => {
               Contacto y Cotizaciones
             </h4>
             <p className="text-xs text-slate-300">
-              Cotiza al momento con nuestros asesores en línea o solicita una pipa de emergencia.
+              Cotiza al momento con nuestros asesores en línea o solicita una pipa de emergencia. 
+              <br />
+              <br />
+              
+              EN TRANSPORTES REYES NO TRABAJAMOS MEDIANTE ANTICIPOS, ES PAGO CONTRA ENTREGA.  
             </p>
-
             <div className="space-y-2.5">
               <button
                 onClick={() => navigate('cotizador')}
