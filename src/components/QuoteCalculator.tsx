@@ -6,7 +6,7 @@ export const QuoteCalculator: React.FC = () => {
   const [service, setService] = useState('Llenado de Cisternas');
   const [waterType, setWaterType] = useState('Agua Potable');
   const [liters, setLiters] = useState('10,000 Litros');
-  const [zone, setZone] = useState('Venustiano Carranza');
+  const [zone, setZone] = useState('Azcapotzalco (CDMX)');
   const [address, setAddress] = useState('');
   const [hoseLength, setHoseLength] = useState('Hasta 30 metros (estándar)');
   const [urgency, setUrgency] = useState('Inmediata / Hoy');
@@ -29,15 +29,18 @@ export const QuoteCalculator: React.FC = () => {
   ];
 
   const zonesList = [
-    'Benito Juárez (CDMX)',
+    'Azcapotzalco (CDMX)',
     'Miguel Hidalgo (CDMX)',
-    'Coyoacán (CDMX)',
+    'Cuauhtémoc (CDMX)',
+    'Gustavo A. Madero (CDMX)',
+    'Benito Juárez (CDMX)',
+    'Venustiano Carranza (CDMX)',
+    'Iztacalco (CDMX)',
     'Iztapalapa (CDMX)',
+    'Coyoacán (CDMX)',
     'Xochimilco (CDMX)',
-    'Division del Norte (Corredor Vial)',
-    'Estado de México',
-    'Otra Alcaldía o Municipio',
-    
+    'Cd. Nezahualcóyotl (Estado de México)',
+    'Los Reyes La Paz (Estado de México)',
   ];
 
   const whatsappUrl = generateWhatsAppUrl({
