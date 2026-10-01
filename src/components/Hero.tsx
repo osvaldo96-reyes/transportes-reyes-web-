@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
       {/* Big Hero Background Image with High Quality & Tint Overlays */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/pipa_de_agua_45litros_Transportes_reyes.jpg"
+          src="/images/Portada_Transportes_reyes.jpeg"
           alt="Camión pipa de agua de Transportes Reyes en servicio"
           className="w-full h-full object-cover object-center scale-105 transform animate-fade-in"
           fetchPriority="high"
@@ -56,15 +56,11 @@ export const Hero: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-sm text-slate-200">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-xs px-3 py-2 rounded-lg border border-white/15">
                 <Truck className="w-4 h-4 text-[#00AEEF] flex-shrink-0" />
-                <span className="font-semibold text-xs sm:text-sm">10k, 20k y 45k Litros</span>
+                <span className="font-semibold text-xs sm:text-sm">10mil LT, 20mil LT y 45mil LT</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-xs px-3 py-2 rounded-lg border border-white/15">
                 <Droplets className="w-4 h-4 text-[#4CAF50] flex-shrink-0" />
                 <span className="font-semibold text-xs sm:text-sm">Potable &amp; Tratada</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-xs px-3 py-2 rounded-lg border border-white/15 col-span-2 sm:col-span-1">
-                <Clock className="w-4 h-4 text-amber-300 flex-shrink-0" />
-                <span className="font-semibold text-xs sm:text-sm">Llegada en 30-45 min</span>
               </div>
             </div>
 
@@ -127,7 +123,7 @@ export const Hero: React.FC = () => {
               <div className="space-y-2.5">
                 <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 border border-slate-200">
                   <span className="text-xs font-semibold text-slate-700">Capacidades:</span>
-                  <span className="text-xs font-bold text-[#0B3D91]">10k, 20k y 45,000 L</span>
+                  <span className="text-xs font-bold text-[#0B3D91]">10mil LT, 20mil LT y 45mil LT</span>
                 </div>
                 <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 border border-slate-200">
                   <span className="text-xs font-semibold text-slate-700">Tipo de Agua:</span>

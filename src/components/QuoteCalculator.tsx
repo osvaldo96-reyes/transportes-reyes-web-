@@ -204,9 +204,7 @@ Urgencia: ${urgency}`;
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#00AEEF] bg-white"
                 >
                   <option value="Hasta 30 metros (estándar)">Hasta 30 metros (estándar)</option>
-                  <option value="De 30 a 60 metros">De 30 a 60 metros</option>
-                  <option value="Más de 60 a 100 metros (especial)">Más de 60 a 100 metros (especial)</option>
-                  <option value="Descarga directa a boca de cisterna">Descarga directa a banqueta</option>
+                   <option value="Mas de 30 metros (Cargo extra)">Mas de 30 metros (Cargo extra)</option>
                 </select>
               </div>
             </div>
