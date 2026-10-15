@@ -1,11 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MessageCircle, Phone, ArrowRight, ShieldCheck, Truck, Clock, Droplets } from 'lucide-react';
 import { COMPANY_INFO } from '../data';
 import { Logo } from './Logo';
-import { useNavigation } from '../context/NavigationContext';
+
 
 export const Hero: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
   return (
     <section
       id="inicio"
@@ -80,7 +81,7 @@ export const Hero: React.FC = () => {
 
               <button
                 id="hero-quote-calculator-btn"
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white/15 hover:bg-white/25 active:bg-white/30 text-white font-bold text-base border border-white/30 backdrop-blur-md transition-all cursor-pointer"
               >
                 <span>Calcular Cotización Online</span>

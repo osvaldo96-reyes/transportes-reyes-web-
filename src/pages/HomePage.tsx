@@ -1,6 +1,7 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Hero } from '../components/Hero';
-import { useNavigation } from '../context/NavigationContext';
+
 import { SERVICES, CAPACITIES, COVERAGE_ZONES, FAQS, COMPANY_INFO } from '../data';
 import {
   Droplets,
@@ -18,7 +19,7 @@ import {
 } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -136,7 +137,7 @@ export const HomePage: React.FC = () => {
               </ul>
             </div>
             <button
-              onClick={() => navigate('capacidades')}
+              onClick={() => navigate('/capacidades')}
               className="w-full py-3 rounded-xl bg-slate-100 hover:bg-[#0B3D91] hover:text-white text-slate-800 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-2"
             >
               <span>Ver Especificaciones Técnicas</span>
@@ -149,7 +150,7 @@ export const HomePage: React.FC = () => {
 
     <div className="mt-10 text-center">
       <button
-        onClick={() => navigate('capacidades')}
+        onClick={() => navigate('/capacidades')}
         className="inline-flex items-center gap-2 text-sm font-black text-[#0B3D91] hover:text-[#00AEEF] transition-colors cursor-pointer"
       >
         <span>Explorar equipamiento y motobombas en la página de Capacidades</span>
@@ -176,7 +177,7 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
             <button
-              onClick={() => navigate('servicios')}
+              onClick={() => navigate('/servicios')}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-[#0B3D91] hover:text-white text-slate-800 text-xs sm:text-sm font-bold transition-all cursor-pointer group flex-shrink-0"
             >
               <span>Ver catálogo completo de servicios</span>
@@ -206,7 +207,7 @@ export const HomePage: React.FC = () => {
                     Agua {service.waterType}
                   </span>
                   <button
-                    onClick={() => navigate('servicios')}
+                    onClick={() => navigate('/servicios')}
                     className="text-xs font-bold text-[#00AEEF] hover:text-[#0B3D91] flex items-center gap-1 cursor-pointer"
                   >
                     <span>Detalles</span>
@@ -240,7 +241,7 @@ export const HomePage: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
               <button
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="px-8 py-4 rounded-xl bg-[#00AEEF] hover:bg-sky-400 text-white font-black text-base shadow-lg shadow-sky-500/25 transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>Abrir Cotizador Interactivo</span>
@@ -277,7 +278,7 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
             <button
-              onClick={() => navigate('cobertura')}
+              onClick={() => navigate('/cobertura')}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-[#0B3D91] hover:text-white text-slate-800 text-xs sm:text-sm font-bold transition-all cursor-pointer flex-shrink-0"
             >
               <span>Ver todas las zonas y tiempos</span>
@@ -289,7 +290,7 @@ export const HomePage: React.FC = () => {
             {COVERAGE_ZONES.slice(0, 6).map((zone) => (
               <div
                 key={zone.id}
-                onClick={() => navigate('cobertura')}
+                onClick={() => navigate('/cobertura')}
                 className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-400 hover:bg-emerald-50/40 transition-all cursor-pointer text-center"
               >
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">
@@ -325,7 +326,7 @@ export const HomePage: React.FC = () => {
               </p>
               <div className="pt-2">
                 <button
-                  onClick={() => navigate('nosotros')}
+                  onClick={() => navigate('/nosotros')}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0B3D91] hover:bg-blue-900 text-white font-bold text-sm shadow-md transition-all cursor-pointer"
                 >
                   <span>Conoce más sobre Transportes Reyes</span>
@@ -337,7 +338,7 @@ export const HomePage: React.FC = () => {
             {/* Official Logo Master Card */}
             <div className="lg:col-span-5 flex justify-center">
               <div
-                onClick={() => navigate('nosotros')}
+                onClick={() => navigate('/nosotros')}
                 className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-lg hover:shadow-xl transition-all cursor-pointer group"
               >
                 <img
@@ -368,7 +369,7 @@ export const HomePage: React.FC = () => {
               </h2>
             </div>
             <button
-              onClick={() => navigate('faq')}
+              onClick={() => navigate('/faq')}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-[#0B3D91] hover:text-white text-slate-800 text-xs sm:text-sm font-bold transition-all cursor-pointer flex-shrink-0"
             >
               <span>Ver todas las preguntas frecuentes</span>
@@ -387,7 +388,7 @@ export const HomePage: React.FC = () => {
                   <p className="text-xs text-slate-600 leading-relaxed">{faq.answer}</p>
                 </div>
                 <button
-                  onClick={() => navigate('faq')}
+                  onClick={() => navigate('/faq')}
                   className="mt-4 text-xs font-bold text-[#00AEEF] hover:text-[#0B3D91] flex items-center gap-1 cursor-pointer"
                 >
                   <span>Leer más detalles</span>

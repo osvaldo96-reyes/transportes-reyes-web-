@@ -1,12 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { CoverageZones } from '../components/CoverageZones';
-import { useNavigation } from '../context/NavigationContext';
+
 import { MapPin, Navigation, Clock, Phone, MessageCircle } from 'lucide-react';
 import { COMPANY_INFO } from '../data';
 
 export const CoveragePage: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -46,7 +47,7 @@ export const CoveragePage: React.FC = () => {
                   <span>Enviar Ubicación por WhatsApp</span>
                 </a>
                 <button
-                  onClick={() => navigate('cotizador')}
+                  onClick={() => navigate('/cotizador')}
                   className="px-6 py-3 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-sm border border-white/20 transition-colors cursor-pointer"
                 >
                   Ir al Cotizador

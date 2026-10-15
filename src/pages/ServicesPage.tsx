@@ -1,12 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { ServicesSection } from '../components/ServicesSection';
-import { useNavigation } from '../context/NavigationContext';
+
 import { Droplets, ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { COMPANY_INFO } from '../data';
 
 export const ServicesPage: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -68,7 +69,7 @@ export const ServicesPage: React.FC = () => {
                 </li>
               </ul>
               <button
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="w-full py-3 px-4 rounded-xl bg-[#0B3D91] hover:bg-blue-900 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
               >
                 <span>Cotizar Pipa de Agua Potable</span>
@@ -107,7 +108,7 @@ export const ServicesPage: React.FC = () => {
                 </li>
               </ul>
               <button
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="w-full py-3 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
               >
                 <span>Cotizar Pipa de Agua Tratada</span>
@@ -127,7 +128,7 @@ export const ServicesPage: React.FC = () => {
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <button
-              onClick={() => navigate('cotizador')}
+              onClick={() => navigate('/cotizador')}
               className="px-6 py-3 rounded-xl bg-[#00AEEF] hover:bg-sky-400 text-white font-bold text-sm shadow-md transition-colors cursor-pointer"
             >
               Usar Cotizador en Línea

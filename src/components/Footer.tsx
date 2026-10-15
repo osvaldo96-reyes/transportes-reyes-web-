@@ -1,11 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Logo } from './Logo';
 import { COMPANY_INFO, COVERAGE_ZONES } from '../data';
 import { Phone, MessageCircle, MapPin, Clock, Mail, ShieldCheck, ArrowRight } from 'lucide-react';
-import { useNavigation } from '../context/NavigationContext';
+
 
 export const Footer: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <footer className="bg-[#072559] text-white pt-16 pb-12 border-t border-blue-900/50">
@@ -14,7 +15,7 @@ export const Footer: React.FC = () => {
           {/* Brand Col */}
           <div className="lg:col-span-4 space-y-4">
             <button
-              onClick={() => navigate('inicio')}
+              onClick={() => navigate('/')}
               className="flex items-start cursor-pointer text-left bg-transparent border-0 p-0 hover:opacity-95 transition-opacity"
               aria-label="Ir a Inicio"
             >
@@ -41,43 +42,43 @@ export const Footer: React.FC = () => {
             {/* Quick Navigation Pills in Footer */}
             <div className="pt-2 flex flex-wrap gap-2 text-xs">
               <button
-                onClick={() => navigate('inicio')}
+                onClick={() => navigate('/')}
                 className="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-slate-200 transition-colors cursor-pointer"
               >
                 Inicio
               </button>
               <button
-                onClick={() => navigate('servicios')}
+                onClick={() => navigate('/servicios')}
                 className="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-slate-200 transition-colors cursor-pointer"
               >
                 Servicios
               </button>
               <button
-                onClick={() => navigate('capacidades')}
+                onClick={() => navigate('/capacidades')}
                 className="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-slate-200 transition-colors cursor-pointer"
               >
                 Capacidades
               </button>
               <button
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-slate-200 transition-colors cursor-pointer"
               >
                 Cotizador
               </button>
               <button
-                onClick={() => navigate('cobertura')}
+                onClick={() => navigate('/cobertura')}
                 className="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-slate-200 transition-colors cursor-pointer"
               >
                 Zonas
               </button>
               <button
-                onClick={() => navigate('nosotros')}
+                onClick={() => navigate('/nosotros')}
                 className="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-slate-200 transition-colors cursor-pointer"
               >
                 Nosotros
               </button>
               <button
-                onClick={() => navigate('faq')}
+                onClick={() => navigate('/faq')}
                 className="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-slate-200 transition-colors cursor-pointer"
               >
                 Preguntas
@@ -93,7 +94,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs text-slate-300">
               <li>
                 <button
-                  onClick={() => navigate('servicios')}
+                  onClick={() => navigate('/servicios')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Pipas de agua a domicilio y casas
@@ -101,7 +102,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('servicios')}
+                  onClick={() => navigate('/servicios')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Llenado de cisternas y tinacos
@@ -109,7 +110,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('servicios')}
+                  onClick={() => navigate('/servicios')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Servicio para empresas y comercios
@@ -117,7 +118,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('servicios')}
+                  onClick={() => navigate('/servicios')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Constructoras y obra civil (Agua tratada)
@@ -125,7 +126,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('servicios')}
+                  onClick={() => navigate('/servicios')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Llenado de albercas y balnearios
@@ -133,7 +134,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('servicios')}
+                  onClick={() => navigate('/servicios')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Abastecimiento para eventos masivos
@@ -141,7 +142,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate('servicios')}
+                  onClick={() => navigate('/servicios')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
                   Emergencias 24 hrs por desabasto
@@ -159,7 +160,7 @@ export const Footer: React.FC = () => {
               {COVERAGE_ZONES.map((z) => (
                 <li key={z.id}>
                   <button
-                    onClick={() => navigate('cobertura')}
+                    onClick={() => navigate('/cobertura')}
                     className="hover:text-white transition-colors text-left cursor-pointer"
                   >
                     {z.name}
@@ -183,7 +184,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="space-y-2.5">
               <button
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="w-full py-3 px-4 rounded-xl bg-[#00AEEF] hover:bg-sky-400 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-colors cursor-pointer"
               >
                 <span>Abrir Cotizador en Línea</span>

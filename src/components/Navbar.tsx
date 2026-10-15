@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Logo } from './Logo';
 import { COMPANY_INFO } from '../data';
 import { Phone, MessageCircle, Menu, X, Clock, MapPin } from 'lucide-react';
-import { useNavigation } from '../context/NavigationContext';
-import { PageId, NavItem } from '../types';
+
+const navLinks = [
+  { path: '/', label: 'Inicio' },
+  { path: '/servicios', label: 'Servicios' },
+  { path: '/capacidades', label: 'Capacidades' },
+  { path: '/cotizador', label: 'Cotizador' },
+  { path: '/cobertura', label: 'Zonas' },
+  { path: '/nosotros', label: 'Nosotros' },
+  { path: '/faq', label: 'Preguntas' },
+];
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { currentPage, navigate } = useNavigation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,21 +27,8 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks: NavItem[] = [
-    { id: 'inicio', label: 'Inicio', href: '#inicio' },
-    { id: 'servicios', label: 'Servicios', href: '#servicios' },
-    { id: 'capacidades', label: 'Capacidades', href: '#capacidades' },
-    { id: 'cotizador', label: 'Cotizador', href: '#cotizador' },
-    { id: 'cobertura', label: 'Zonas', href: '#cobertura' },
-    { id: 'nosotros', label: 'Nosotros', href: '#nosotros' },
-    { id: 'faq', label: 'Preguntas', href: '#faq' },
-  ];
-
-  const handleNavClick = (pageId: PageId, e: React.MouseEvent) => {
-    e.preventDefault();
-    navigate(pageId);
-    setMobileMenuOpen(false);
-  };
+  const activeClass = 'text-[#0B3D91] bg-sky-50 shadow-xs border-b-2 border-[#00AEEF]';
+  const inactiveClass = 'text-slate-700 hover:text-[#0B3D91] hover:bg-slate-50';
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -83,33 +79,29 @@ export const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo */}
-          <button
+          <NavLink
+            to="/"
             id="nav-brand-logo"
-            onClick={(e) => handleNavClick('inicio', e)}
-            className="flex items-center group transition-transform hover:scale-[1.01] cursor-pointer text-left bg-transparent border-0 p-0"
+            className="flex items-center group transition-transform hover:scale-[1.01]"
             aria-label="Ir a página de Inicio"
           >
             <Logo variant="horizontal" />
-          </button>
+          </NavLink>
 
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-2 xl:gap-3">
-            {navLinks.map((link) => {
-              const isActive = currentPage === link.id;
-              return (
-                <button
-                  key={link.id}
-                  onClick={(e) => handleNavClick(link.id, e)}
-                  className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-all cursor-pointer relative ${
-                    isActive
-                      ? 'text-[#0B3D91] bg-sky-50 shadow-xs border-b-2 border-[#00AEEF]'
-                      : 'text-slate-700 hover:text-[#0B3D91] hover:bg-slate-50'
-                  }`}
-                >
-                  {link.label}
-                </button>
-              );
-            })}
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                end={link.path === '/'}
+                className={({ isActive }) =>
+                  `px-3 py-1.5 rounded-lg text-sm font-bold transition-all cursor-pointer relative ${isActive ? activeClass : inactiveClass}`
+                }
+              >
+                {link.label}
+              </NavLink>
+            ))}
           </div>
 
           {/* Action CTAs */}
@@ -125,7 +117,7 @@ export const Navbar: React.FC = () => {
 
             <button
               id="nav-quote-button"
-              onClick={(e) => handleNavClick('cotizador', e)}
+              onClick={() => navigate('/cotizador')}
               className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-[#0B3D91] hover:bg-blue-900 text-white text-xs font-bold shadow-md transition-all cursor-pointer"
             >
               <span>Cotizar Pipa</span>
@@ -158,26 +150,29 @@ export const Navbar: React.FC = () => {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-slate-200 shadow-xl px-4 py-4 animate-in slide-in-from-top-3">
             <div className="flex flex-col gap-1.5">
-              {navLinks.map((link) => {
-                const isActive = currentPage === link.id;
-                return (
-                  <button
-                    key={link.id}
-                    onClick={(e) => handleNavClick(link.id, e)}
-                    className={`w-full text-left px-3.5 py-2.5 rounded-lg font-bold text-base transition-colors flex items-center justify-between ${
-                      isActive
-                        ? 'bg-sky-50 text-[#0B3D91] border-l-4 border-[#00AEEF]'
-                        : 'text-slate-800 hover:bg-slate-50'
-                    }`}
-                  >
-                    <span>{link.label}</span>
-                    {isActive && <span className="w-2 h-2 rounded-full bg-[#00AEEF]" />}
-                  </button>
-                );
-              })}
+              {navLinks.map((link) => (
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  end={link.path === '/'}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `w-full text-left px-3.5 py-2.5 rounded-lg font-bold text-base transition-colors flex items-center justify-between ${
+                      isActive ? 'bg-sky-50 text-[#0B3D91] border-l-4 border-[#00AEEF]' : 'text-slate-800 hover:bg-slate-50'
+                    }`
+                  }
+                >
+                  {({ isActive }) => (
+                    <>
+                      <span>{link.label}</span>
+                      {isActive && <span className="w-2 h-2 rounded-full bg-[#00AEEF]" />}
+                    </>
+                  )}
+                </NavLink>
+              ))}
               <div className="pt-3 border-t border-slate-200 flex flex-col gap-2 mt-2">
                 <button
-                  onClick={(e) => handleNavClick('cotizador', e)}
+                  onClick={() => { navigate('/cotizador'); setMobileMenuOpen(false); }}
                   className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-[#0B3D91] text-white font-bold text-sm cursor-pointer"
                 >
                   <span>Cotizador en Línea</span>
@@ -206,4 +201,3 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
-
