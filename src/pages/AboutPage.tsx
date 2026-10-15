@@ -1,12 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { BrandEssence } from '../components/BrandEssence';
-import { useNavigation } from '../context/NavigationContext';
+
 import { Sparkles, Award, Users, ShieldCheck, HeartHandshake, ArrowRight } from 'lucide-react';
 import { COMPANY_INFO } from '../data';
 
 export const AboutPage: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -71,7 +72,7 @@ export const AboutPage: React.FC = () => {
           {/* Direct CTA */}
           <div className="mt-14 text-center">
             <button
-              onClick={() => navigate('cotizador')}
+              onClick={() => navigate('/cotizador')}
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0B3D91] hover:bg-blue-900 text-white font-black text-sm shadow-lg transition-all cursor-pointer"
             >
               <span>Solicitar Pipa con Transportes Reyes</span>

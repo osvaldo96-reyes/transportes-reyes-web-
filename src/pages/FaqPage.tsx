@@ -1,12 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { FaqSection } from '../components/FaqSection';
-import { useNavigation } from '../context/NavigationContext';
+
 import { HelpCircle, Phone, MessageCircle, FileText, ArrowRight } from 'lucide-react';
 import { COMPANY_INFO } from '../data';
 
 export const FaqPage: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -48,7 +49,7 @@ export const FaqPage: React.FC = () => {
                 <span>Preguntar por WhatsApp</span>
               </a>
               <button
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>Ir al Cotizador</span>

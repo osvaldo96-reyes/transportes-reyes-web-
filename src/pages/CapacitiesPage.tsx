@@ -1,12 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { FleetCapacities } from '../components/FleetCapacities';
-import { useNavigation } from '../context/NavigationContext';
+
 import { Truck, ShieldCheck, Zap, Gauge, Wrench, ArrowRight } from 'lucide-react';
 import { COMPANY_INFO } from '../data';
 
 export const CapacitiesPage: React.FC = () => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -89,7 +90,7 @@ export const CapacitiesPage: React.FC = () => {
             </div>
             <div className="flex flex-wrap gap-3">
               <button
-                onClick={() => navigate('cotizador')}
+                onClick={() => navigate('/cotizador')}
                 className="px-6 py-3 rounded-xl bg-[#00AEEF] hover:bg-sky-400 text-white font-bold text-sm shadow-md transition-all cursor-pointer flex items-center gap-2"
               >
                 <span>Calcular en Cotizador</span>

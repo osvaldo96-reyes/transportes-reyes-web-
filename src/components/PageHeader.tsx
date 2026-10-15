@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigation } from '../context/NavigationContext';
+import { useNavigate } from 'react-router-dom';
 import { ChevronRight, Home, Phone, MessageCircle } from 'lucide-react';
 import { COMPANY_INFO } from '../data';
 
@@ -18,7 +18,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   currentLabel,
   badgeIcon,
 }) => {
-  const { navigate } = useNavigation();
+  const navigate = useNavigate();
 
   return (
     <div className="relative pt-32 pb-14 bg-gradient-to-b from-[#072559] via-[#0B3D91] to-[#0d47a1] text-white overflow-hidden">
@@ -30,7 +30,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
         {/* Breadcrumbs */}
         <nav aria-label="Miga de pan" className="flex items-center gap-2 text-xs text-sky-200/90 mb-6">
           <button
-            onClick={() => navigate('inicio')}
+            onClick={() => navigate('/')}
             className="flex items-center gap-1.5 hover:text-white transition-colors cursor-pointer"
           >
             <Home className="w-3.5 h-3.5 text-[#00AEEF]" />
